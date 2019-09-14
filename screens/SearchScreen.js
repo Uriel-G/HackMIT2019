@@ -1,20 +1,32 @@
 import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
+import { SearchBar } from 'react-native-elements';
 
-export default function LinksScreen() {
-  return (
-    <ScrollView style={styles.container}>
-      {/**
-       * Go ahead and delete ExpoLinksView and replace it with your content;
-       * we just wanted to provide you with some helpful links.
-       */}
-      <ExpoLinksView />
-    </ScrollView>
-  );
+
+export default class SearchScreen extends React.Component{
+  state = {
+    search: '',
+  };
+
+  updateSearch = search => {
+    this.setState({ search });
+  };
+
+  render() {
+    const { search } = this.state;
+
+    return (
+      <SearchBar
+      placeholder="Type Here..."
+      onChangeText={this.updateSearch}
+      value={search}
+      lightTheme={true}
+    />
+    );
+  }
 }
 
-LinksScreen.navigationOptions = {
+SearchScreen.navigationOptions = {
   title: 'Search',
 };
 
