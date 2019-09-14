@@ -1,0 +1,112 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/sarahvu/.nvm/versions/node/v6.5.0/bin/node',
+1 verbose cli   '/Users/sarahvu/.nvm/versions/node/v6.5.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'bootstr' ]
+2 info using npm@3.10.3
+3 info using node@v6.5.0
+4 verbose config Skipping project config: /Users/sarahvu/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData bootstr
+9 silly fetchNamedPackageData bootstr
+10 silly mapToRegistry name bootstr
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'bootstr',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'bootstr',
+13 silly mapToRegistry   name: 'bootstr',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/bootstr
+15 verbose request uri https://registry.npmjs.org/bootstr
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 4:26:51 PM
+18 verbose request using bearer token for auth
+19 verbose request id ab6cbc7a15c2d546
+20 http request GET https://registry.npmjs.org/bootstr
+21 info retry will retry, error on last attempt: Error: read ECONNRESET
+22 info attempt registry request try #2 at 4:27:55 PM
+23 verbose request using bearer token for auth
+24 http request GET https://registry.npmjs.org/bootstr
+25 http 404 https://registry.npmjs.org/bootstr
+26 verbose headers { date: 'Sat, 14 Sep 2019 20:28:06 GMT',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   'content-length': '21',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'set-cookie': [ '__cfduid=d22d41b1e5a82ebc0aa84f7bc6422bca91568492885; expires=Sun, 13-Sep-20 20:28:05 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+26 verbose headers   'cf-cache-status': 'MISS',
+26 verbose headers   'cache-control': 'max-age=300',
+26 verbose headers   'cf-ray': '51651af86e14ae36-BOS',
+26 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+26 verbose headers   vary: 'accept-encoding, accept',
+26 verbose headers   server: 'cloudflare' }
+27 silly get cb [ 404,
+27 silly get   { date: 'Sat, 14 Sep 2019 20:28:06 GMT',
+27 silly get     'content-type': 'application/json',
+27 silly get     'content-length': '21',
+27 silly get     connection: 'keep-alive',
+27 silly get     'set-cookie': [ '__cfduid=d22d41b1e5a82ebc0aa84f7bc6422bca91568492885; expires=Sun, 13-Sep-20 20:28:05 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+27 silly get     'cf-cache-status': 'MISS',
+27 silly get     'cache-control': 'max-age=300',
+27 silly get     'cf-ray': '51651af86e14ae36-BOS',
+27 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+27 silly get     vary: 'accept-encoding, accept',
+27 silly get     server: 'cloudflare' } ]
+28 silly fetchPackageMetaData Error: Not found : bootstr
+28 silly fetchPackageMetaData     at makeError (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+28 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+28 silly fetchPackageMetaData     at Request._callback (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+28 silly fetchPackageMetaData     at Request.self.callback (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+28 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+28 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+28 silly fetchPackageMetaData     at Request.<anonymous> (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+28 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+28 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+28 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+28 silly fetchPackageMetaData  error for bootstr { Error: Not found : bootstr
+28 silly fetchPackageMetaData     at makeError (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+28 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+28 silly fetchPackageMetaData     at Request._callback (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+28 silly fetchPackageMetaData     at Request.self.callback (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+28 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+28 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+28 silly fetchPackageMetaData     at Request.<anonymous> (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+28 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+28 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+28 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:988:12) pkgid: 'bootstr', statusCode: 404, code: 'E404' }
+29 silly rollbackFailedOptional Starting
+30 silly rollbackFailedOptional Finishing
+31 silly runTopLevelLifecycles Starting
+32 silly runTopLevelLifecycles Finishing
+33 silly install printInstalled
+34 verbose stack Error: Not found : bootstr
+34 verbose stack     at makeError (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+34 verbose stack     at CachingRegistryClient.<anonymous> (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+34 verbose stack     at Request._callback (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+34 verbose stack     at Request.self.callback (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+34 verbose stack     at emitTwo (events.js:106:13)
+34 verbose stack     at Request.emit (events.js:191:7)
+34 verbose stack     at Request.<anonymous> (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+34 verbose stack     at emitOne (events.js:101:20)
+34 verbose stack     at Request.emit (events.js:188:7)
+34 verbose stack     at IncomingMessage.<anonymous> (/Users/sarahvu/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+35 verbose statusCode 404
+36 verbose pkgid bootstr
+37 verbose cwd /Users/sarahvu/HackMIT2019
+38 error Darwin 18.7.0
+39 error argv "/Users/sarahvu/.nvm/versions/node/v6.5.0/bin/node" "/Users/sarahvu/.nvm/versions/node/v6.5.0/bin/npm" "install" "bootstr"
+40 error node v6.5.0
+41 error npm  v3.10.3
+42 error code E404
+43 error 404 Not found : bootstr
+44 error 404
+45 error 404 'bootstr' is not in the npm registry.
+46 error 404 You should bug the author to publish it (or use the name yourself!)
+47 error 404 Note that you can also install from a
+48 error 404 tarball, folder, http url, or git url.
+49 verbose exit [ 1, true ]
