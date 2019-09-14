@@ -1,0 +1,7 @@
+Students:
+    - Events and projects on students are things they are posting
+    - Skills are optional, should we turn off for students? 
+
+Volunteers:
+    - Skills not optional
+    - Events and Projects could be things they have worked on in the past or things they are currently working on
