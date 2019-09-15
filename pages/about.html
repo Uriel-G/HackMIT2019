@@ -1,49 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-      
-        <title>HackMIT2019</title>
-      
-        <!-- Font Awesome Icons -->
-        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-      
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-      
-        <!-- Theme CSS - Includes Bootstrap -->
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-          <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>HackMIT2019</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
-<div class="container">
-        <nav class="navbar navbar-expand-lg navbar-darkfixed-top py-3" id="mainNav">
-            <div class="container">
-              <a class="navbar-brand js-scroll-trigger" href="../index.html">Cambridge Community Connect</a>
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="./about.html"">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="./calendar.html">Calendar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Login</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+<style>
+    img {
+        opacity: 0.3; 
+        filter: alpha(opacity=30); 
+        width: 100%; 
+    }
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 75%; 
+    }
+    /*search box css start here*/
+    .search-sec{
+        padding: 2rem;
+    }
+    .search-slt{
+        display: block;
+        width: 100%;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: #55595c;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        height: calc(3rem + 2px) !important;
+        border-radius:0;
+    }
+    .wrn-btn{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+        height: calc(3rem + 2px) !important;
+        border-radius:0;
+    }
+    @media (min-width: 992px){
+        .search-sec{
+            position: relative;
+            top: -114px;
+            background: rgba(26, 70, 104, 0.51);
+        }
+    }
+
+    @media (max-width: 992px){
+        .search-sec{
+            background: #1A4668;
+        }
+}
+</style>
+
+<body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-darkfixed-top py-3" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="./index.html">Cambridge Community Connect</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="./pages/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="./pages/calendar.html">Calendar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Login</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </div>
+    
+    <section>
+        <div class="container">
+            <img src="https://studentaffairs.unt.edu/sites/default/files/unt-sustainability/images/garden-hero.png">
+            <div class="centered">
+                <p><font color="black", size="4">The founders of this platform are four MIT students who are passionate about enabling community building through opportunities. One day at a Hackathon well known as HackMIT, they created this website to help people connect and work together for good causes.</font></p> 
+            </div>
+        </div>
+    </section> 
+</body>
